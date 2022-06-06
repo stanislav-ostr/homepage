@@ -14,12 +14,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 
-    --primary-text-color: #181820;
+    --primary-text-color: #252531;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: rgba(147, 255, 0, 0.27);
+    --text-decoration-color: #398a11;
 }
 
 .container {
@@ -57,6 +57,7 @@ body {
 @media screen and (max-width: 576px) {
 
     .main-info,
+    .bottom-block,
     .contact_info_container {
         flex-direction: column;
     }
@@ -88,8 +89,6 @@ Contact info styles
   .contact-info__header {
       color: var(--primary-text-color);
       margin-bottom: 15px;
-      text-decoration-color: var(--text-decoration-color);
-      text-decoration-line: underline;
   }
 
   .contact-info__sub-header {
@@ -173,6 +172,12 @@ Contact info styles
 .intro_text {
     color: var(--secondary-text-color);
     text-align: justify;
+    font-style: italic;
+}
+
+.intro_text > p:first-child {
+    font-weight: bold;
+    font-size: 110%;
 }
 
 .skills__header {
@@ -284,4 +289,12 @@ Experience and additonal info styles
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.bottom-block {
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    font-style: italic;
+    color: #6a737d;
 }
